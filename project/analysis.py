@@ -7,6 +7,7 @@ df_consumption = pd.read_json(r'/Users/erik.kronberg/Desktop/dataAcademy/consump
 #print(dfTotElec)
 #print(dfWind)
 
+#Added a comment for git
 ElecByWind = df_wind['value']
 
 totElec = df_consumption['value']
