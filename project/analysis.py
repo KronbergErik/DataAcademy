@@ -12,6 +12,7 @@ ElecByWind = df_wind['value']
 
 totElec = df_consumption['value']
 
+#Merge together
 df_merged = df_wind.merge(df_consumption,on=['start_time','end_time'])
 
 df_merged.rename(columns = {'value_x':'Wind', 'value_y':'Consumption'}, inplace = True)
